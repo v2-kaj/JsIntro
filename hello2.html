@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Internal JS</title>
+		<script>
+			function sayHello(){
+				var msg= "Hello World"
+				document.querySelector('h1').innerHTML= msg;
+			}
+			document.addEventListener('DOMContentLoaded', function(){
+				document.querySelector('button').onclick = sayHello
+			})
+		</script>
+	</head>
+	<body>
+		<h1>Hello CIS4</h1>
+		<button>Click Here</button>
+	</body>
+</html>
